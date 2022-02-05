@@ -6,7 +6,7 @@
 
   <groupId>com.mgh.edd</groupId>
   <artifactId>saludaMaven</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>   
 
   <name>saludaMaven</name>
   <!-- FIXME change it to the project's website -->
@@ -50,7 +50,15 @@
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
+          <version>3.0.2</version> 
+           <configuration>
+           <archive>
+               <manifest>
+                   <addClasspath>true</addClasspath>
+                   <mainClass>com.mgh.edd.App</mainClass>
+               </manifest>
+           </archive>
+       </configuration>        
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
